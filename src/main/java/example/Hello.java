@@ -3,7 +3,7 @@ package example;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-public class Hello implements RequestHandler<String, String> {
+public class Hello implements RequestHandler<Object, String> {
     /**
      *
      * Lambda request handlers implement AWS Lambda Function application logic using plain old java objects
@@ -13,7 +13,7 @@ public class Hello implements RequestHandler<String, String> {
      * @param: The output parameter type
      */
     @Override
-    public String handleRequest(String input, Context context) {
+    public String handleRequest(Object input, Context context) {
         StringBuilder output = new StringBuilder("Check Start:");
         output.append(" Hello");
         output.append(" World!");
