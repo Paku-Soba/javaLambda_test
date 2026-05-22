@@ -3,7 +3,7 @@ package example;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-public class LambdaHelloWorld implements RequestHandler<String, String> {
+public class Hello implements RequestHandler<String, String> {
     /**
      *
      * Lambda request handlers implement AWS Lambda Function application logic using plain old java objects
